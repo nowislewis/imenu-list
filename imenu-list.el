@@ -258,7 +258,7 @@ See `hs-minor-mode' for information on what is hide/show."
   (if (imenu--subalist-p entry)
       (progn
         (insert (imenu-list--depth-string depth))
-        (insert-button (format "+ %s" (car entry))
+        (insert-button (format "%s" (car entry))
                        'face (imenu-list--get-face depth t)
                        'help-echo (format "Toggle: %s"
                                           (car entry))
